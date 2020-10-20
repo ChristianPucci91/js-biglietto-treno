@@ -8,18 +8,42 @@
 
 // chiedo l'età all'utente
 
-var eta = parseInt(prompt(" Quanti anni hai? "));
+var eta = parseInt( prompt( " Quanti anni hai? " ));
 
-console.log("età", eta)
+console.log("età", eta);
 
 // chiedo i km all'utente
 
-var km = parseInt(prompt(" Quanti km vuoi percorrere? "));
+var km = parseInt( prompt( " Quanti km vuoi percorrere? " ));
 
-console.log("chilometri", km)
+console.log( "chilometri", km );
 
 // prezzo biglietto
 
 var prezzoBiglietto = ( km * 0.21 );
 
-console.log("prezzo biglietto", prezzoBiglietto)
+console.log( "prezzo biglietto", prezzoBiglietto );
+
+// prezzo biglietto scontato 20%
+
+var prezzoScontato20 = ( prezzoBiglietto - ( prezzoBiglietto * 0.20 ));
+
+console.log( prezzoScontato20 );
+
+// prezzo biglietto scontato 40%
+
+var prezzoScontato40 = ( prezzoBiglietto - ( prezzoBiglietto * 0.40 ));
+
+console.log ( prezzoScontato40 );
+
+// Stabilire condizione di età
+
+if (eta <= 17) {
+  document.getElementById('biglietto').innerHTML = (" prezzo scontato al 20% = " + prezzoScontato20.toFixed(2) + "€") ;
+} else if (eta >= 66) {
+   document.getElementById('biglietto').innerHTML = (" prezzo scontato al 40% = " + prezzoScontato40.toFixed(2) + "€" ) ;
+} else {
+   document.getElementById('biglietto').innerHTML = (" prezzo intero = " + prezzoBiglietto.toFixed(2) + "€") ;
+}
+
+//.toFixed per arrotondare il prezzo scontato in difetto/eccesso.
