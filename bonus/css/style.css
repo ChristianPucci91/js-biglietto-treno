@@ -1,0 +1,31 @@
+/* regole generali */
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(#000000,#3f6e81,#f1f1f1);
+  height: 100vh;
+  width: 100%;
+}
+
+.centre {
+  width: 70%;
+  margin:100px auto;
+  text-align: center;
+}
+
+.centre img {
+  width: 100%;
+  height: 50%;
+}
+
+.info-box {
+  margin-top:20px;
+  width: 100%;
+  min-height: 30px;
+  background: white;
+  border-radius: 20px;
+}
