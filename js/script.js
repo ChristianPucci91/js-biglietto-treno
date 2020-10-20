@@ -6,35 +6,22 @@
 // va applicato uno sconto del 20% per i minorenni
 // va applicato uno sconto del 40% per gli over 65
 
-// chiedo l'età all'utente
+// chiedo l'età & i km all'utente
 
 var eta = parseInt( prompt( " Quanti anni hai? " ));
-
-console.log("età", eta);
-
-// chiedo i km all'utente
-
 var km = parseInt( prompt( " Quanti km vuoi percorrere? " ));
 
-console.log( "chilometri", km );
-
-// prezzo biglietto
+// prezzo biglietto ( 0.21€ per km * km inseriti dall'utente)
 
 var prezzoBiglietto = ( km * 0.21 );
 
-console.log( "prezzo biglietto", prezzoBiglietto );
-
-// prezzo biglietto scontato 20%
+// prezzo biglietto scontato 20% ( prezzo intero - prezzo percentuale = prezzo scontato)
 
 var prezzoScontato20 = ( prezzoBiglietto - ( prezzoBiglietto * 0.20 ));
 
-console.log( prezzoScontato20 );
-
-// prezzo biglietto scontato 40%
+// prezzo biglietto scontato 40% ( prezzo intero - prezzo percentuale = prezzo scontato)
 
 var prezzoScontato40 = ( prezzoBiglietto - ( prezzoBiglietto * 0.40 ));
-
-console.log ( prezzoScontato40 );
 
 // Stabilire condizione di età
 
