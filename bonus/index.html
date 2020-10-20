@@ -6,23 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Slabo+27px&display=swap" rel="stylesheet">
 
     <title>Biglietto treno in js by Christian Pucci</title>
   </head>
 
   <body>
 
+       <!-- centratura page -->
     <div class="centre">
 
+        <!-- logo pagina -->
       <img src="img/orient-express.png" alt="orient express logo">
 
+       <!-- box centrale -->
       <div class="info-box">
 
-        <h1 id="biglietto"></h1>
+        <!-- parte sinistra box centrale -->
+        <div class="info-tariffa">
+
+          <div id="over65"><i class="fas fa-hat-cowboy"></i></div>
+          <div id="under18"><i class="fas fa-child"></i></div>
+          <div id="standard"><i class="fas fa-male"></i></div>
+          <h3 id="titolo-prezzo"></h3>
+
+        </div>
+
+        <!-- parte destra box centrale -->
+        <div class="prezzo-biglietto">
+
+              <h1 id="biglietto"></h1>
+              <a href="#"> Acquista</a>
+
+        </div>
+        
+      </div>
+
+      <!-- Ringraziamenti footer -->
+      <div class="footer">
+
+         <h1>Grazie per aver scelto Orient Express</h1>
+         <h4>Al vostro servizio dal 1883.</h4>
 
       </div>
     </div>
-
 
     <!-- SCRIPT FOR JAVASCRIPT -->
    <script type="text/javascript" src="js/script.js">
